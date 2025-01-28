@@ -20,3 +20,7 @@
 // document.querySelector("#id")
 // document.querySelector(".class");
 document.getElementsByClassName('class-name')
+
+
+
+
