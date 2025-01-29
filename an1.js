@@ -5,7 +5,7 @@ let fun=()=>{
         pera.style.display='block';
      }
      else{
-        pera.style.display='none';
+        pera.style.display='none';    
      }
 }
 
@@ -126,6 +126,7 @@ let run4=()=>{
       pera.style.display='none';
    }
 
+   
    pera.style.backgroundColor='green';
 
 
