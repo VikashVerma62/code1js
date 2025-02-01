@@ -1,79 +1,75 @@
 let sub=()=>{
-    let inpname=document.querySelector("#name").value
-    let inpnum=document.querySelector("#number").value
-    let inpemail=document.querySelector("#email").value
-    let inpass=document.querySelector("#pass").value
-    let inpcpass=document.querySelector("#cpass").value
-    
-    
-    let errorname=document.querySelector("#errorname")
-    let errornum=document.querySelector("#errornum")
-    let erroremail=document.querySelector("#erroremail")
-    let errorpass=document.querySelector("#errorpass")
-    let errorcpass=document.querySelector("#errorcpass")
-    
-    
+    let inpname=document.querySelector("#name").value;
+    let inpnum=document.querySelector("#number").value;
+    let inpemail=document.querySelector("#email").value;
+    let inppass=document.querySelector("#password").value;
+    let inpcpass=document.querySelector("#cpass").value;
+
+
+
+    let errorname=document.querySelector("#errorname");
+    let errornum=document.querySelector("#errornum");
+    let erroremail=document.querySelector("#erroremail");
+    let errorpass=document.querySelector("#errorpass");
+    let errorcpass=document.querySelector("#errorcpass");
+
+
     if(inpname==""){
-        errorname.innerHTML="please fill the name field"
+        errorname.innerHTML="please fill the name";
         errorname.style.color="red";
         return false;
     }
-    else if(isNaN(inpnum)){   // if Number than ans will be false 
+
+
+
+    if(inpnum==""){
+        errornum.innerHTML="please fill the number field";
+        errornum.style.color="red";
+        return false;
+    }
+     else if(isNaN(inpnum) ){
         errornum.innerHTML="please enter number only";
         errornum.style.color="red";
         return false;
-    }
-    else if(inpnum.length!==10){
+     }
+     else if(inpnum.length!=10){
         errornum.innerHTML="please enter 10 digit only";
         errornum.style.color="red";
         return false;
-    }
-    else if(!(inpemail.includes("@"))&& (inpemail.includes(".com"))){
-    
-    erroremail.innerHTML="please enter valid email";
-    return false;
-    
-    }
-    else if((inpass.match([/1234567890 /])) && ([/!@#$%^&*() /]) &&(inpass.match([/a-z /])) &&(/A-Z/)){
-    errorpass.innerHTML="enter strong password";
-    errorpass.style.color="red";
-    }
-    
-    
-    if(inpnum==""){
-        errornum.innerHTML="please fill the number field"
-        errornum.style.color="red";
-        return false;
-    }
-    
+     }
     if(inpemail==""){
-        erroremail.innerHTML="please fill the number field"
+        erroremail.innerHTML="please enter the email";
         erroremail.style.color="red";
         return false;
     }
-    
-    if(inpass==""){
-        errorpass.innerHTML="please fill the number field"
+
+
+     else if(!(inpemail.includes("@") && inpemail.includes(".com"))){
+        inpemail.innerHTML="please enter valid email";
+        inpemail.style.color="red";
+        return false;
+     }
+
+    if(inppass==""){
+        errorpass.innerHTML="please enter the password field";
+        errorpass.style.color="red";
+        return false;
+
+    }
+    else if((inppass.match[/1234567890 /])&& inppass.match[/!@#$%^&*() /] && inppass.match[/ a-z/] && inppass.match[/ A-Z/]){
+        errorpass.innerHTML="enter strong password";
         errorpass.style.color="red";
         return false;
     }
-    
-    
     if(inpcpass==""){
-        errorcpass.innerHTML="please fill the number field"
+        errorcpass.innerHTML="please fill the conform pass field";
         errorcpass.style.color="red";
         return false;
     }
-    // password and conform passward is same to submit the form
-    
-    if(inpass!=inpcpass){
-        errorcpass.innerHTML="comform password is wrong";
+
+    if(inppass!=inpcpass){
+        errorcpass.innerHTML="password and conform password is not match";
         errorcpass.style.color="red";
         return false;
     }
-    
-    
-    
-    
-    
-    }
+}
