@@ -60,7 +60,7 @@ let sub=()=>{
         errorpass.innerHTML="enter strong password";
         errorpass.style.color="red";
         return false;
-    }
+    }         
     if(inpcpass==""){
         errorcpass.innerHTML="please fill the conform pass field";
         errorcpass.style.color="red";
