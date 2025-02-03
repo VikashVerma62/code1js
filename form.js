@@ -6,7 +6,6 @@ let sub=()=>{
     let inpcpass=document.querySelector("#cpass").value;
 
 
-
     let errorname=document.querySelector("#errorname");
     let errornum=document.querySelector("#errornum");
     let erroremail=document.querySelector("#erroremail");
@@ -70,6 +69,6 @@ let sub=()=>{
     if(inppass!=inpcpass){
         errorcpass.innerHTML="password and conform password is not match";
         errorcpass.style.color="red";
-        return false;
+      return false;
     }
 }
