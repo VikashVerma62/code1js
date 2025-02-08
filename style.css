@@ -1,0 +1,18 @@
+#tab{
+    display: flex;
+    justify-content: center;
+    
+    background-image: url(./WhatsApp\ Image\ 2025-02-08\ at\ 01.34.19_0a5fc13c.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+}
+#tab1{
+margin-top: 50px;
+margin-bottom: 50px;
+color: white;
+font-size: 18px;
+font-weight: bolder;
+background-color: ;
+}
