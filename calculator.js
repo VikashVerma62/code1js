@@ -19,8 +19,9 @@ let AC=()=>{
 
 let del=()=>{
     let show=document.querySelector("#display")
-
+ 
     store=store.slice(0,-1);
+
     show.innerHTML=store; 
 
 }
