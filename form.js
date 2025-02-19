@@ -1,3 +1,14 @@
+VANTA.CLOUDS({
+    el: "#new",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00
+  })
+
+
+
 let sub=()=>{
     let inpname=document.querySelector("#name").value;
     let inpnum=document.querySelector("#number").value;
