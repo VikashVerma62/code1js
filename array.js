@@ -26,7 +26,5 @@ console.log("A", myArray);
 const myn1=myArray.slice(1,3); // in slice it does not manupulate the or not change the array it gives only a slice of array
 console.log(myn1);// slice consider the 1 and index -1 to working of slice method
 console.log("B", myArray);
-
-
 const myn2=myArray.splice(1,3);// in splice it change the sturcture of array which means it cut the array and give a  slice or part or array
 console.log(myn2);
